@@ -1,0 +1,12 @@
+* text=auto eol=lf
+
+# Binary assets - do not convert line endings
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.ttf binary
+*.woff binary
+*.woff2 binary

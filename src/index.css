@@ -1,0 +1,84 @@
+@import "./assets/fonts/fonts.css";
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter";
+  --font-indieflower: "IndieFlower";
+  --color-primary: #1a2217;
+  --breakpoint-xs: 320px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #216308;
+  color: #fff;
+}
+
+.bg-hero {
+  @apply bg-[url('/src/assets/hero.jpg')] bg-cover bg-center bg-no-repeat;
+}
+
+.drop-shadow-plant {
+  filter: drop-shadow(0 -0.169rem 0.138rem #0000000c) drop-shadow(0 -0.407rem 0.333rem #00000012)
+    drop-shadow(0 -0.767rem 0.627rem #00000016) drop-shadow(0 -1.368rem 1.117rem #0000001a)
+    drop-shadow(0 -2.559rem 2.089rem #0000001f) drop-shadow(0 -6.125rem 5rem #0000002b);
+}
+
+.drop-shadow-logo {
+  filter: drop-shadow(0 0.145rem 0.116rem #0000000b) drop-shadow(0 0.337rem 0.269rem #00000010)
+    drop-shadow(0 0.605rem 0.484rem #00000014) drop-shadow(0 1.004rem 0.803rem #00000017)
+    drop-shadow(0 1.653rem 1.322rem #0000001b) drop-shadow(0 2.889rem 2.312rem #00000020)
+    drop-shadow(0 6.25rem 5rem #0000002b);
+}
+
+.section-heading-shadow {
+  position: relative;
+  text-shadow:
+    0 0.124rem 0.099rem #00000016,
+    0 0.283rem 0.226rem #00000020,
+    0 0.493rem 0.394rem #00000027,
+    0 0.782rem 0.626rem #0000002e,
+    0 1.207rem 0.966rem #00000034,
+    0 1.884rem 1.507rem #0000003c,
+    0 3.128rem 2.503rem #00000046,
+    0 6.25rem 5rem #0000005c;
+}
+
+.section-heading-shadow::before {
+  clip-path: path("M0,20 Q0,0 20,0 H280 Q300,0 300,20 ...");
+}
+
+.trend-card-heading-shadow {
+  text-shadow:
+    0 -0.011rem 0.099rem #00000010,
+    0 -0.026rem 0.226rem #00000017,
+    0 -0.044rem 0.394rem #0000001c,
+    0 -0.071rem 0.626rem #00000021,
+    0 -0.109rem 0.966rem #00000026,
+    0 -0.169rem 1.507rem #0000002b,
+    0 -0.281rem 2.503rem #00000032,
+    0 -0.562rem 5rem #00000042;
+}
+
+.trend-card-price {
+  text-shadow:
+    0 0.064rem 0.138rem #0000002c,
+    0 0.154rem 0.333rem #00000040,
+    0 0.289rem 0.626rem #0000004f,
+    0 0.516rem 1.116rem #0000005e,
+    0 0.966rem 2.088rem #00000072,
+    0 2.312rem 5rem #0000009e;
+}
+
+.clipped {
+  clip-path: url(#card);
+  -webkit-clip-path: url(#card);
+}
+
+.corner {
+  clip-path: url(#corner);
+  -webkit-clip-path: url(#corner);
+}
